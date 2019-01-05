@@ -7,7 +7,7 @@
     "lint": "eslint **/*.js",
     "test": "jest --coverage --verbose",
     "test-watch": "jest --watchAll --coverage --verbose",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
