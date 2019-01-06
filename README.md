@@ -1,43 +1,44 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 10
 =================================================
 
-## Project Name
+## Lab 10 - Q Server
 
-### Author: Student/Group Name
+### Authors: Lena Eivy, Caity Heath, Tanner Seramur, and Ryan Gallaway
 
 ### Links and Resources
-* [repo](http://xyz.com)
+* [repo](https://github.com/applena/10-project-q)
 * [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [back-end](https://lab-10-q-server-ei-ch-ts-rg.herokuapp.com)
 
 ### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+#### `server.js`, `subscriber.js`, and `publisher.js`
+##### Exports Server, Q, and Publisher methods respectively  
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+**Project: Build a Multi-Tenant Message Queue Server.**
 
-###### `bar(array) -> array`
-Usage Notes or examples
+**Summary:**
+ 
+ A Queue server runs independently, and is tasked with routing events and messaging between clients. 
+
+- Any connected client can "publish" a message into the server.
+- Any connected client can "subscribe" to receive messages by type.
+
+The Queue server has the ability to see which clients are connected,  to which Queues they are attached and further, to which events they are subscribed.  The Queue server is tasked with receiving any published message and then distributing it out to all connected and subscribed clients. 
+
 
 ### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `PORT` - Socket runs on port 3001
 
 #### Running the app
-* `npm start` starts the server
-* second terminal `node simulator.js`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
+* `npm i` to install dependencies
+* first terminal: `npm start` starts the server
+* second terminal: `node ./client/publisherClient.js` user info
+* third terminal: `node ./client/subscriberClient.js` room join
 
 #### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+* npm test (runs unit tests)
+* npm run  lint (runs linter tests)
+* confirms existence/availability of namespace 
+* confrims existence/availability of room/event
+* confirms user only subscribes to one room/event 
 
-#### UML
-Link to an image of the UML for your application and response to events
