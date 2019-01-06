@@ -2,7 +2,7 @@
 
 const Q = require('./lib/server.js');
 const config = require('./config');
-
+console.log('hello from app.js');
 //start the default socket listener
 Q.start();
 
