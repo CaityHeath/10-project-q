@@ -16,4 +16,8 @@ db.subscribe('create', (payload) => {
 //   console.log('dog happened');
 // });
 
-//console.log(db.subscriptions());
+
+setTimeout(()=>{
+  console.log('I am in the following rooms: ',db.subscriptions());
+}, 1000);
+
