@@ -12,4 +12,8 @@ db.subscribe('create', (payload) => {
   console.log('create happened', payload);
 });
 
-console.log(db.subscriptions());
+// db.subscribe('dogs', (payload)=> {
+//   console.log('dog happened');
+// });
+
+//console.log(db.subscriptions());
