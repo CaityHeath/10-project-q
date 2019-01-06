@@ -9,9 +9,6 @@ Q.start();
 //add all listeners and monitors for namespaces
 for (let name in config.queues){
   let queue = new Q(name);
-  config.queues[name].forEach(room => {
-    queue.monitorEvent(room);
-  });
 }
 
 
