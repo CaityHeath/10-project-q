@@ -12,4 +12,12 @@ db.subscribe('create', (payload) => {
   console.log('create happened', payload);
 });
 
-console.log(db.subscriptions());
+// db.subscribe('dogs', (payload)=> {
+//   console.log('dog happened');
+// });
+
+
+setTimeout(()=>{
+  console.log('I am in the following rooms: ',db.subscriptions());
+}, 1000);
+
