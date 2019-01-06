@@ -7,7 +7,7 @@
 
 ### Links and Resources
 * [repo](https://github.com/applena/10-project-q)
-* [travis](http://xyz.com)
+* [travis](https://travis-ci.com/applena/10-project-q.svg?branch=master)
 * [back-end](https://lab-10-q-server-ei-ch-ts-rg.herokuapp.com)
 
 ### Modules
