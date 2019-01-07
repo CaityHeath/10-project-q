@@ -32,8 +32,8 @@ The Queue server has the ability to see which clients are connected,  to which Q
 #### Running the app
 * `npm i` to install dependencies
 * first terminal: `npm start` starts the server
-* second terminal: `node ./client/publisherClient.js` user info
-* third terminal: `node ./client/subscriberClient.js` room join
+* second terminal: `node ./clients/publisherClient.js` user info
+* third terminal: `node ./clients/subscriberClient.js` room join
 
 #### Tests
 * npm test (runs unit tests)
