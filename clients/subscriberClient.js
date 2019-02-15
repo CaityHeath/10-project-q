@@ -1,8 +1,8 @@
 'use strict';
 
-const Q = require('../lib/subscriber.js');
+const Connection = require('../lib/subscriber.js');
 
-const db = new Q('database');
+const db = new Connection ('database');
 
 db.subscribe('delete', (payload) => {
   console.log('delete happened', payload);
